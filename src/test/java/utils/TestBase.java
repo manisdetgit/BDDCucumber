@@ -15,7 +15,7 @@ public class TestBase {
 
 
     public WebDriver webDriverManager() throws IOException {
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\global.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/global.properties");
         Properties prop = new Properties();
         prop.load(fis);
         String url = prop.getProperty("QAUrl");
