@@ -2,6 +2,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
@@ -22,7 +23,14 @@ public class TestBase {
 
         if (driver == null) {
             if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-                driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu");  // Optional, sometimes helps with stability in headless mode
+                options.addArguments("--window-size=1920x1080"); // Optional, set window size for headless mode
+
+                // Initialize WebDriver in headless mode
+                 driver = new ChromeDriver(options);
+               // driver = new ChromeDriver();
             } else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
             }
