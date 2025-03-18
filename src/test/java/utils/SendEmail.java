@@ -8,12 +8,12 @@ import java.io.File;
 public class SendEmail {
 
     public static void sendReport(String reportPath, String screenshotPath, String subject, String bodyText) {
-        String fromEmail = "manisankarasrinivasu.dusanapudi@publicissapient.com";  // Your email address
-        String toEmail = "manisankarasrinivasu.dusanapudi@publicissapient.com";    // Recipient email address
-        String smtpServer = "smtp.office365.com";       // SMTP server (e.g., smtp.gmail.com)
+        String fromEmail = "sdetmani@gmail.com";  // Your email address
+        String toEmail = "sdetmani@gmail.com";    // Recipient email address
+        String smtpServer = "smtp.gmail.com";       // SMTP server (e.g., smtp.gmail.com)
         String smtpPort = "587";                      // SMTP port
-        String username = "manisankarasrinivasu.dusanapudi@publicissapient.com";   // Email username
-        String password = "Msks@jan30";      // Email password
+        String username = "sdetmani@gmail.com";   // Email username
+        String password = "Ms@12345";      // Email password
 
         try {
             // Set up the email properties
