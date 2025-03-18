@@ -10,7 +10,7 @@ public class SendEmail {
     public static void sendReport(String reportPath, String screenshotPath, String subject, String bodyText) {
         String fromEmail = "manisankarasrinivasu.dusanapudi@publicissapient.com";  // Your email address
         String toEmail = "manisankarasrinivasu.dusanapudi@publicissapient.com";    // Recipient email address
-        String smtpServer = "smtp.example.com";       // SMTP server (e.g., smtp.gmail.com)
+        String smtpServer = "smtp.office365.com";       // SMTP server (e.g., smtp.gmail.com)
         String smtpPort = "587";                      // SMTP port
         String username = "manisankarasrinivasu.dusanapudi@publicissapient.com";   // Email username
         String password = "Msks@jan30";      // Email password
